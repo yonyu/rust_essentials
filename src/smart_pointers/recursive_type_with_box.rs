@@ -13,6 +13,13 @@ pub fn instantiate_list() {
     println!("list: {:?}", list);
 }
 
+// list b and c cannot share the list a
+// fn problem() {
+//     let a = Cons(5, Box::new(Cons(10, Box::new(Nil))));
+//     let _b = Cons(3, Box::new(a));
+//     let _c = Cons(4, Box::new(a));
+// }
+
 #[cfg(test)]
 mod tests {
     use super::*;

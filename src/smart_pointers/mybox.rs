@@ -35,6 +35,7 @@ mod tests {
 
     #[test]
     fn test_hello() {
+        // deref coercion
         let my = MyBox::new(String::from("Rust"));
         hello(&my);
     }
