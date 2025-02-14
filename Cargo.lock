@@ -71,6 +71,10 @@ name = "command_line_arguments"
 version = "0.1.0"
 
 [[package]]
+name = "compound_types"
+version = "0.1.0"
+
+[[package]]
 name = "concurrency"
 version = "0.1.0"
 dependencies = [
@@ -258,6 +262,10 @@ checksum = "77957b295656769bb8ad2b6a6b09d897d94f05c41b069aede1fcdaa675eaea04"
 dependencies = [
  "zerocopy 0.7.35",
 ]
+
+[[package]]
+name = "primitive_types"
+version = "0.1.0"
 
 [[package]]
 name = "proc-macro2"
