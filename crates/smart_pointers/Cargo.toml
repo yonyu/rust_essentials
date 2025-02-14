@@ -1,0 +1,7 @@
+[package]
+name = "rust_lang"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+
+[dependencies]
