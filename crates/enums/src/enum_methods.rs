@@ -16,7 +16,7 @@ impl Shape {
 
 #[cfg(test)]
 mod tests {
-    use crate::match_with_default_placeholder::match_with_default;
+    //use crate::match_with_default_placeholder::match_with_default;
     use super::*;
     #[test]
     fn test_get_perimeter() {

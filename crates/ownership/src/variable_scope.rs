@@ -10,7 +10,8 @@
 fn in_scope() {
     let planet= "Earth";
 
-    if true {
+    //if true
+    {
         //let planet = "Earth";
         println!("{}", planet);
     }

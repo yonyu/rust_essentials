@@ -29,7 +29,7 @@ impl Description for SpaceStation {
 
 #[cfg(test)]
 mod tests {
-    use std::mem;
+    //use std::mem;
     use super::*;
     #[test]
     fn test_traits() {

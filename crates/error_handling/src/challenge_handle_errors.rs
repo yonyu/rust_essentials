@@ -2,14 +2,14 @@ use rand::prelude::*;
 use std::io;
 
 pub fn handle_lower_higher() {
-    let mut rng = rand::thread_rng();
-    let secret_number =  rng.gen_range(1..101);
+    let mut rng = rand::rng();
+    let secret_number =  rng.random_range(1..101);
     println!("Guess a number between 1 and 100: ");
     loop {
         let mut buffer = String::new();
-        let result = match io::stdin().read_line(&mut buffer) {
-            Ok(contents) => {},
-            Err(error) => {
+        let _ = match io::stdin().read_line(&mut buffer) {
+            Ok(_contents) => {},
+            Err(_error) => {
                 println!("please enter a number");
                 continue;
             }

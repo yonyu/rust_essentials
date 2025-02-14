@@ -3,7 +3,7 @@ mod result_enum;
 mod match_result_to_recover;
 mod propagating_errors;
 mod challenge_handle_errors;
-mod collections;
+//mod collections;
 
 fn main() {
     //unrecoverable_errors::exercise();

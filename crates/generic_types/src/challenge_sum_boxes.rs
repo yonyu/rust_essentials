@@ -14,8 +14,8 @@ mod tests {
         let box3 = sum_boxes(box1, box2);
         assert_eq!(*box3, 3);
 
-        let pi = Box::new(3.14159);
-        let e = Box::new(2.71828);
+        let pi = Box::new(std::f64::consts::PI);
+        let e = Box::new(std::f64::consts::E);
         assert_eq!(*sum_boxes(pi, e),  5.85987);
 
         println!("box 3 is {} bytes", mem::size_of_val(&box3));

@@ -24,7 +24,7 @@ impl<T> Rectangle<T> {
 }
 
 fn practice() {
-    let mut rect = Rectangle::new(10, 20);
+    let mut _rect = Rectangle::new(10, 20);
 
     // println!("Area: {}", rect.get_area());
     // println!("Perimeter: {}", rect.get_perimeter());

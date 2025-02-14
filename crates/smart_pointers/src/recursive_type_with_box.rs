@@ -6,7 +6,7 @@ pub enum List {
     Nil,
 }
 
-use crate::smart_pointers::recursive_type_with_box::List::{Cons, Nil};
+use crate::recursive_type_with_box::List::{Cons, Nil};
 
 pub fn instantiate_list() {
     let list = Cons(1, Box::new(Cons(2, Box::new(Cons(3, Box::new(Nil))))));

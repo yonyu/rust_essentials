@@ -6,7 +6,7 @@ struct Satellite {
 
 #[cfg(test)]
 mod tests {
-    use std::mem;
+    //use std::mem;
     use super::*;
     #[test]
     fn test_traits() {

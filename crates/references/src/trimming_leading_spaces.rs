@@ -33,7 +33,7 @@ pub fn trim_spaces_trial(s: &str) -> String {
     let chars = s.as_bytes();
     let mut left_trimmed =  String::new();
     let mut start = 0;
-    for (index, &item) in chars.iter().enumerate() {
+    for (_index, &item) in chars.iter().enumerate() {
         if item != 32 {
             left_trimmed.push_str(&s[start..]);
             break;
@@ -48,7 +48,7 @@ pub fn trim_spaces_trial(s: &str) -> String {
     let mut trimmed =  String::new();
     let chars = left_trimmed.as_bytes();
     start = left_trimmed.len();
-    for (index, &item) in chars.iter().rev().enumerate() {
+    for (_index, &item) in chars.iter().rev().enumerate() {
         if item != 32 {
             trimmed.push_str(&left_trimmed[..start]);
             break;

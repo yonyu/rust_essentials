@@ -5,7 +5,7 @@ pub fn exercise() {
 
     for count in countdown.iter() {
         println!("T-minus {}", count);
-        let x = 1 / count; // this won't end well
+        //let x = 1 / count; // this won't end well
     }
 
     // powershell: $Env:RUST_BACKTRACE=1

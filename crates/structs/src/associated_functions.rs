@@ -26,7 +26,7 @@ impl Shuttle {
 
 fn practice() {
     let mut vehicle = Shuttle::new("Endeavour");
-    let mut vehicle2 = Shuttle::new("Discovery");
+    //let mut vehicle2 = Shuttle::new("Discovery");
     
     let name = vehicle.get_name();
 
