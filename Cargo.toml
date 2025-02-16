@@ -1,5 +1,5 @@
 [workspace]
-members = ["crates/*", "crates/primitive_types"]
+members = ["crates/*", "crates/primitive_types", "crates/data_types"]
 default-members = ["crates/smart_pointers"]
 resolver = "2"
 
