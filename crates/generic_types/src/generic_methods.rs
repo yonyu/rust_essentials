@@ -1,3 +1,4 @@
+#[warn(dead_code)]
 #[derive(Debug)]
 struct Rectangle<T, U> {
     width: T,
@@ -17,6 +18,7 @@ impl<T, U> Rectangle<T, U> {
     // }
 }
 
+#[allow(dead_code)]
 impl Rectangle<u8, u8> {
     fn get_perimeter(&self) -> u8 {
         2 * (self.width + self.height)
@@ -24,7 +26,7 @@ impl Rectangle<u8, u8> {
 }
 
 fn practice() {
-    let mut rect = Rectangle::new(10u16, 20u32);
+    let rect = Rectangle::new(10u16, 20u32);
 
     eprintln!("rect is {:?}", rect);
     println!("Width: {}", rect.get_width());
@@ -45,7 +47,7 @@ mod tests {
     fn test_rectangle() {
         practice();
 
-        let mut rect = Rectangle::new(1.2, 3.4);
+        let _rect = Rectangle::new(1.2, 3.4);
         // assert_eq!(rect.get_area(), 4.08);
     }
 }

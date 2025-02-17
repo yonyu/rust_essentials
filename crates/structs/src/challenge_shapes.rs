@@ -1,8 +1,10 @@
+#[warn(dead_code)]
 struct Rectangle {
     width: f64,
     height: f64,
 }
 
+#[warn(dead_code)]
 impl Rectangle {
     fn new(width: f64, height: f64) -> Rectangle {
         Rectangle { width, height }
@@ -22,6 +24,7 @@ impl Rectangle {
     }
 }
 
+#[warn(dead_code)]
 fn practice() {
     let mut rect = Rectangle::new(10.0, 20.0);
 

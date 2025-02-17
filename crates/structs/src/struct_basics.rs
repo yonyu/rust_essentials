@@ -1,10 +1,11 @@
+#[warn(dead_code)]
 #[derive(Debug)]
 struct Shuttle {
     name: String,
     crew_size: u8,
     propellant: f64,
 }
-
+#[warn(dead_code)]
 fn practice() {
     let vehicle = Shuttle {
         name: String::from("Endeavour"),
@@ -16,6 +17,7 @@ fn practice() {
     println!("vehicle: {:?}", vehicle);
 }
 
+#[warn(dead_code)]
 fn update_vehicle() {
     let mut vehicle = Shuttle {
         name: String::from("Endeavour"),

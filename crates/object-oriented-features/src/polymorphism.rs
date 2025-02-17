@@ -1,11 +1,14 @@
+#[warn(dead_code)]
 pub trait Draw {
     fn draw(&self);
 }
 
+#[warn(dead_code)]
 pub struct Screen {
     pub components: Vec<Box<dyn Draw>>,
 }
 
+#[warn(dead_code)]
 impl Screen {
     pub fn run(&self) {
         for component in self.components.iter() {
@@ -14,6 +17,7 @@ impl Screen {
     }
 }
 
+#[warn(dead_code)]
 pub struct Button {
     width: u32,
     height: u32,
@@ -26,6 +30,7 @@ impl Draw for Button {
     }
 }
 
+#[warn(dead_code)]
 pub struct SelectBox {
     width: u32,
     height: u32,

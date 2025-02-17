@@ -1,3 +1,4 @@
+#[warn(dead_code)]
 #[derive(Debug)] // derives the trait Debug
 #[derive(Clone)]
 struct Shuttle {
@@ -6,6 +7,7 @@ struct Shuttle {
     propellant: f64,
 }
 
+#[warn(dead_code)]
 impl Shuttle {
     fn get_name(&self) -> &str {
         &self.name
@@ -16,6 +18,7 @@ impl Shuttle {
     }
 }
 
+#[warn(dead_code)]
 fn practice() {
     let mut vehicle = Shuttle {
         name: String::from("Endeavour"),
