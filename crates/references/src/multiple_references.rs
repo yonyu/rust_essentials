@@ -20,9 +20,10 @@ fn one_mutable_reference() {
 
     let r = &mut s; // mutable borrow occurs here
 
-    println!("The original value: {}", s); // immutable borrow occurs here, this is not allowed
-
     println!("The mutable reference: {}", r); //mutable borrow used here
+
+    // mutable borrow ends here, so we can now use an immutable borrow
+    println!("The original value: {}", s); // immutable borrow occurs here
 }
 
 

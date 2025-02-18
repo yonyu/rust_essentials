@@ -10,6 +10,7 @@ fn main() {
         name: "Endeavour",
     };
 
-    let sender = vehicle.send_transmission(&String::from("Ground Control"));
+    let message = String::from("Ground Control");
+    let sender = vehicle.send_transmission(&message);
     println!("sender is {}", sender);
 }

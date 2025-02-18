@@ -5,7 +5,11 @@ pub fn add(left: u64, right: u64) -> u64 {
 pub mod threads;
 pub mod message_passing;
 pub mod async_tokio;
+pub mod channels;
 
+pub fn execute() {
+    threads::move_closure::demo_move_closure();
+}
 
 #[cfg(test)]
 mod tests {
@@ -15,5 +19,10 @@ mod tests {
     fn it_works() {
         let result = add(2, 2);
         assert_eq!(result, 4);
+    }
+    
+    #[test]
+    fn test_execute() {
+        execute();
     }
 }
