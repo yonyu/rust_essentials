@@ -4,7 +4,7 @@ pub fn add(left: u64, right: u64) -> u64 {
 
 pub mod threads;
 pub mod message_passing;
-pub mod async_tokio;
+pub mod async_await;
 pub mod shared_state;
 
 pub fn execute() {

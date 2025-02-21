@@ -6,3 +6,4 @@ authors.workspace = true
 
 [dependencies]
 tokio = { version = "1.43.0", features = ["full"] }
+trpl = "0.2.0"
