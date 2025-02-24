@@ -4,3 +4,4 @@ pub mod counting;
 pub mod message_passing;
 pub mod future_racing_yielding;
 pub mod timeout_async;
+pub mod stream_impl;
