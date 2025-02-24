@@ -120,8 +120,8 @@ fn print_intervals() {
             .throttle(Duration::from_millis(100))
             .timeout(Duration::from_secs(10));
         let merged = messages.merge(intervals).take(20);
-        // make steam mutable, so that the while let loop's next calls can iterate through
-        // the stream , and pin it so that is safe to do so.
+        // make stream mutable, so that the while let loop's next calls can iterate through
+        // the stream, and pin it so that is safe to do so.
         let mut stream = pin!(merged);
 
         while let Some(result) = stream.next().await {
