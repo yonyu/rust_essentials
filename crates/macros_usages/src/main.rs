@@ -1,13 +1,8 @@
 //use my_macros::say_hello;
-use my_macros::generate_function;
+use my_macros::{generate_function, make_answer};
 
-// generate_function!
-//     fn greet() {
-//         println!("Hello from greet!");
-//     }
-// }
+make_answer!();
 
-// generate_function!(greet);
 generate_function! {
     #[inline]
     fn greet() {
@@ -23,6 +18,8 @@ struct Pancakes;
 
 fn main() {
     println!("Hello, world!");
+
+    println!("{}", answer());
 
     greet();
 

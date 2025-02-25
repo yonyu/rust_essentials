@@ -16,6 +16,12 @@ macro_rules! say_hello {
 
 // a simple function-like procedural macro
 #[proc_macro]
+pub fn make_answer(_item: TokenStream) -> TokenStream {
+    "fn answer() -> u32 { 42 }".parse().unwrap()
+}
+
+// a more complex function-like procedural macro
+#[proc_macro]
 pub fn generate_function(input: TokenStream) -> TokenStream {
     // Parse the input tokens into a syntax tree
     let input = parse_macro_input!(input as ItemFn);
