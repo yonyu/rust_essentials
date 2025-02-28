@@ -1,6 +1,7 @@
 mod borrow_checker;
 mod lifetime_annotation;
 mod struct_lifetime_annotations;
+mod lifetime_basics;
 
 fn main() {
     borrow_checker::demonstrate_borrowed_value_lifetime();
