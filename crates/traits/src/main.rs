@@ -5,6 +5,7 @@ mod trait_bounds;
 mod multiple_trait_bounds;
 mod return_types_with_implemented_traits;
 mod challenge_implement_display_trait;
+mod dyn_keyword;
 
 fn main() {
     println!("Hello, world!");
