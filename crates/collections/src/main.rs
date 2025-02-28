@@ -1,6 +1,7 @@
 mod vectors;
 mod haspmaps;
 mod challenge_count_words;
+mod case_insensitive_sort;
 
 // cargo run ".\from earth to moon.txt"
 // cargo run -p collections "crates\collections\from earth to moon.txt"
